@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking Agency</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal CSS */
+        body {
+            background-image: url('travel-bg.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        h1 {
+            color: navy;
+        }
+        .container {
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">TravelGo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#book">Book Now</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h1 class="text-center">Welcome to TravelGo</h1>
+        <p class="text-center">Your one-stop solution for booking the best travel destinations.</p>
+        
+        <h2 id="destinations">Popular Destinations</h2>
+        <ul class="list-unstyled">
+            <li>Paris</li>
+            <li>New York</li>
+            <li>Tokyo</li>
+            <li>Dubai</li>
+        </ul>
+        
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Destination</th>
+                        <th>Price</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Paris</td>
+                        <td>$1200</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>New York</td>
+                        <td>$1500</td>
+                        <td>Limited</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <h2 id="book">Book Your Trip</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" class="form-control" required>
+            </div>
+            
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" class="form-control" required>
+            </div>
+            
+            <div class="mb-3">
+                <label for="destination" class="form-label">Destination:</label>
+                <select id="destination" class="form-select">
+                    <option>Paris</option>
+                    <option>New York</option>
+                    <option>Tokyo</option>
+                    <option>Dubai</option>
+                </select>
+            </div>
+            
+            <button type="submit" class="btn btn-primary w-100">Book Now</button>
+        </form>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
